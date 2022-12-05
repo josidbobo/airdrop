@@ -30,6 +30,11 @@ __Check out the frontend design [Here](https://www.figma.com/file/DY7ZEUHLnt5tiV
 _The project was finally deployed and the link to the live prototype is [Here]()_
 
 ### Smart Contract Address
+My contracts were deployed to both the mumbai testnet and zk-EVM testnet respectively
+
+zk-EVM address - https://explorer.public.zkevm-test.net/address/0x9ad674004D67395067A8e9B540bb674Dd8733597
+
+mumbai deployment link - https://mumbai.polygonscan.com/tx/0xf9fe379a4cd0b3cfc41c15e99bfa046cc3ad1c8fe05afab0000613531a02e0a8
 
 
 <!-- 

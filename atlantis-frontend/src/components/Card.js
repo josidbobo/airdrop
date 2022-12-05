@@ -26,12 +26,11 @@ function Card() {
       </div>
       <div className="card">
         <h4>TOTAL SENT</h4>
-        <Loading />
-        <p>40%</p>
+        <p></p>
       </div>
       <div className="card">
         <h4>TOTAL CLAIMED</h4>
-        <p>3000/5k</p>
+        <p></p>
       </div>
     </div>
   );

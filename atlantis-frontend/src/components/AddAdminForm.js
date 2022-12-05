@@ -6,7 +6,8 @@ import { etherContext } from './contexts/EtherProvider';
 
 function AddAdminForm() {
     const [walletAddress, setWalletAddress] = useState('');
-    const CONTRACT_ADDRESS = "0xE61Cb4f798d2Df3B7202a93Cf4364b2D367e5F15";
+    const [contractAddress, setContractAddress] = useState('');
+    const CONTRACT_ADDRESS = "0x88054D8Df7795Be28aC50c2fea92E7043aB8AF8E";
     const { provider } = useContext(etherContext)
 
 
@@ -27,6 +28,28 @@ function AddAdminForm() {
                 let response = await contract.addAdmin(walletAddress);
                 console.log("New admin added, response: ", response);
                 setWalletAddress("")
+            }
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    const handleContractAddressAdding = async () => {
+       
+        ///don't do anything if wallet address is empty
+        if(!contractAddress){return}
+        console.log(contractAddress)
+
+        try {
+            const {ethereum} = window;
+            if(ethereum) {
+                
+                const signer = provider.getSigner()
+                const contract = new ethers.Contract(CONTRACT_ADDRESS, contractAbi.abi, signer);
+
+                let response = await contract.addContractAddress(contractAddress);
+                console.log("Contract Address added, response: ", response);
+                setContractAddress("")
             }
         } catch (error) {
             console.log(error)
@@ -68,9 +91,32 @@ function AddAdminForm() {
     return (
         <div className='admin-section'>
            <div className="only-admin">
-               <h4>ADMIN</h4>
-               <p>Only an admin can add or delete an address on theis platform</p>
+               <h4>ADMI</h4>
+               <p>Only the Contract admin can add the contract address to this platform</p>
            </div>
+
+           <div className="addAdmin-form">
+           <h4>CONTRACT ADDRESS</h4>
+        
+           <form className="admin-form" onSubmit={handleSubmit}>
+           
+           <input
+            className='address-input'
+            type="text"
+            value={contractAddress}
+            placeholder="Enter contract address"
+            required
+            onChange={e => setContractAddress(e.target.value)}
+            />
+           <div className="form-buttons">
+           <button style={{ "color":"white", "backgroundColor":"#5B7AB7"}} className="add-admin-button" onClick={handleContractAddressAdding} type="submit">
+                    Add
+            </button>
+            </div>
+           </form> </div>
+
+        
+        
            <div className="addAdmin-form">
            <h4>ADDRESS</h4>
         

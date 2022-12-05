@@ -1,8 +1,8 @@
 function Header () {
     return (
         <header className="header">
-          <h1>NESTCOIN CINEMAS</h1>
-          <h3>Customer Loyalty Programme</h3>
+          <h1>AIRDROPSHIPPER</h1>
+          <h3>The best Loyalty Token distributor</h3>
         </header>
 
     )
