@@ -21,7 +21,7 @@ _Finally we needed a way to keep track of the token and also usage/claim so we a
 
 ### UI Design
 
-![Atlantis](https://user-images.githubusercontent.com/19577206/162528321-94ec4f4e-b9f4-4814-bbcd-bbb4bac96607.JPG)
+![Atlantis]()
 
 __Check out the frontend design [Here](https://www.figma.com/file/DY7ZEUHLnt5tiVwwI1n08q/Atlantics?node-id=5501%3A2)__
 
