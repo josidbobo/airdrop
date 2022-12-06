@@ -57,6 +57,7 @@ function AddAdminForm() {
     }
 
 
+
     const handleSubmit = (e) => {
         e.preventDefault()
     }
@@ -89,10 +90,11 @@ function AddAdminForm() {
 
 
     return (
+        <div>
         <div className='admin-section'>
            <div className="only-admin">
-               <h4>ADMI</h4>
-               <p>Only the Contract admin can add the contract address to this platform</p>
+               <h4>ADMIN</h4>
+               <p>Only the contract admin can add address on this platform</p>
            </div>
 
            <div className="addAdmin-form">
@@ -113,36 +115,42 @@ function AddAdminForm() {
                     Add
             </button>
             </div>
-           </form> </div>
-
-        
-        
-           <div className="addAdmin-form">
-           <h4>ADDRESS</h4>
-        
-           <form className="admin-form" onSubmit={handleSubmit}>
-           
-           <input
-            className='address-input'
-            type="text"
-            value={walletAddress}
-            placeholder="enter wallet address"
-            required
-            onChange={e => setWalletAddress(e.target.value)}
-            />
-           <div className="form-buttons">
-           <button style={{ "color":"#FFD4D4", "backgroundColor":"#C61717"}} className="remove-admin-button" onClick={handleRemoveAddress} type="submit">
-                    Remove Admin
-            </button>
-           <button style={{ "color":"white", "backgroundColor":"#5B7AB7"}} className="add-admin-button" onClick={handleAddAddress} type="submit">
-                    Add Admin
-            </button>
-            </div>
-           </form>
-        
+           </form> 
         
            </div>
         </div>
+        <div className='admin-section'>
+        <div className="only-admin">
+            <h4>ADMIN</h4>
+            <p>Only an admin can delete or add other admins</p>
+        </div>
+        
+        <div className="addAdmin-form">
+        <h4>ADDRESS</h4>
+     
+        <form className="admin-form" onSubmit={handleSubmit}>
+        
+        <input
+         className='address-input'
+         type="text"
+         value={walletAddress}
+         placeholder="enter wallet address"
+         required
+         onChange={e => setWalletAddress(e.target.value)}
+         />
+        <div className="form-buttons">
+        <button style={{ "color":"#FFD4D4", "backgroundColor":"#C61717"}} className="remove-admin-button" onClick={handleRemoveAddress} type="submit">
+                 Remove Admin
+         </button>
+        <button style={{ "color":"white", "backgroundColor":"#5B7AB7"}} className="add-admin-button" onClick={handleAddAddress} type="submit">
+                 Add Admin
+         </button>
+         </div>
+        </form>
+     
+        </div>
+     </div>
+     </div>
     )
 
 }

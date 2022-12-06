@@ -21,11 +21,12 @@ function Card() {
     <div className="menu-card">
       <div className="card">
         <h4>Total Bonus</h4>
-        <p>5,000</p>
+        <p></p>
         <p>ALT-TOKEN</p>
       </div>
       <div className="card">
         <h4>TOTAL SENT</h4>
+        
         <p></p>
       </div>
       <div className="card">

@@ -24,10 +24,10 @@ function DashBoard() {
         </div>
        {provider &&  <p className="address">{String(address).slice(0,5)}..{String(address).slice(-5)}</p>}
         <div className="notification">
-          <h4>NOTICE</h4>
+          <h4>NOTIFICATION</h4>
           <p>In order to use the Dapp to send out the tokens</p>
           <p>Connect your wallet, input the contract address in the appropriate box provided</p>
-          <p>then Drag and drop the excel file containing addresses and amount</p>
+          <p>Then Drag and drop the excel file containing addresses and amount</p>
           <p>Kindly Take Note All Admins</p>
         </div>
         <div className="dashboard-social"></div>
