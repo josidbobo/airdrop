@@ -1,22 +1,22 @@
 # AirdropShipper
 
-_This tool is an Airdrop simplification infrastructure for Initial Coin Offerings on the Polygon network, it could also be used for a range of other utility like Loyalty rewards and Crypto giveaway automatically handled by our smart contract._ 
+_This tool is an Airdrop simplification infrastructure for Initial Coin Offerings on the Polygon network, it could also be used for a range of other utility like Loyalty rewards and Crypto giveaway automatically handled by our smart contract and so much more._ 
 
 ## Problem Statement
 
 _They would like to:_
 1. A company wants to distribute its utility tokens to a bunch of addresses, which would be used to reward loyal customers. 
-2. The addresses are so much instead of writing a new smart contract, our tool could be used to simplify the process.
+2. The addresses are so much, instead of writing a new smart contract, our tool could be used to simplify the process.
 3. Allows an admin/owner to distribute a specified token amongst a batch of addresses as reward for being loyal customers.
 
 
 ## Solution
 
-_We created two contracts one to distribute the minted token to the beneficiaries, while the other would be to exchange the currency for services amd other perks. The frontend was created to help admin distribute the token which is a form of rewarding loyal customers._
+_I created two contracts one to distribute the minted token to the beneficiaries, while the other would be to exchange the currency for services amd other perks. The frontend was created to help admin distribute the token which is a form of rewarding loyal customers, the admin drags and drops an excel file containing the wallet addresses of the beneficiaries and the amount to be given to each of them in a double column format ie Address - First Column; Amount - Second column._
 
-_We also looked at security aspect. We had to implement add and also remove admin feature. But note that only admin can add another._
+_I also looked at security aspect. We had to implement add and also remove admin feature. But note that only admin can add another._
 
-_Finally we needed a way to keep track of the token and also usage/claim so we added the analytics part to the frontend._
+_Finally I needed a way to keep track of the token and also usage/claim so we added the analytics part to the frontend._
 
 
 ### UI Design
@@ -27,7 +27,7 @@ __Check out the frontend design [Here](https://www.figma.com/file/DY7ZEUHLnt5tiV
 
 ### Frontend Link
 
-_The project was finally deployed and the link to the live prototype is [Here]()_
+_The project was finally deployed and the link to the live prototype is [Here](https://airdrop-ca6046.spheron.app/)_
 
 ### Smart Contract Address
 My contracts were deployed to both the mumbai testnet and zk-EVM testnet respectively
@@ -40,6 +40,7 @@ mumbai deployment link - https://mumbai.polygonscan.com/tx/0xf9fe379a4cd0b3cfc41
 <!-- 
 ## Technologies
 - React
+- Css
 - Solidity
 - Mocha
 - Chai -->
@@ -53,7 +54,7 @@ mumbai deployment link - https://mumbai.polygonscan.com/tx/0xf9fe379a4cd0b3cfc41
 ```bash
     cd airdrop
 ```
-- Change directory to the `frontend` or `smart-contracts` folder depending on which you want to install
+- Change directory to the `atlantis-frontend` or `smart-contracts` folder depending on which you want to install
 ```bash
     cd {{name of folder}}
 ```
@@ -70,9 +71,9 @@ mumbai deployment link - https://mumbai.polygonscan.com/tx/0xf9fe379a4cd0b3cfc41
 ```
 - change directory into the project's folder.
 ```bash
-    cd literate-octo-palm-tree
+    cd airdrop
 ```
-- Change directory to the `frontend` or `smart-contracts` folder depending on which you want to install
+- Change directory to the `atlantis-frontend` or `smart-contracts` folder depending on which you want to install
 ```bash
     cd {{name of folder}}
 ```
