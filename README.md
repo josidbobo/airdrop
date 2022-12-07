@@ -37,13 +37,13 @@ zk-EVM address - https://explorer.public.zkevm-test.net/address/0x9ad674004D6739
 mumbai deployment link - https://mumbai.polygonscan.com/tx/0xf9fe379a4cd0b3cfc41c15e99bfa046cc3ad1c8fe05afab0000613531a02e0a8
 
 
-<!-- 
+
 ## Technologies
 - React
 - Css
 - Solidity
 - Mocha
-- Chai -->
+- Chai 
 
 ## How to install
 - Clone the repo using
